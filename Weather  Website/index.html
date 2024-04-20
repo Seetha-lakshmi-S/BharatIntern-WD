@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="weathericon.png" type="png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 mx-auto">
+      <h1 class="head">Weather Website</h1>
+      <div class="card-box mx-auto">.
+        
+        <div class="search_icon">
+          <input type="text" class="search-bar" placeholder="Enter Location" id="searchTxt" />
+          <button class="button_icon" onclick="getWeatherData()">Track</button>
+        </div>
+      </div>
+      <div class="card-box mx-auto">
+        <div class="weather" id="weatherDetails">
+          <div class="city" id="cityName">Get the Weather Conditions for Any Point on Earth</div>
+          <hr>
+          <img src="weather.png" alt="Placeholder Image" class="placeholdericon" id="placeholderImage" />
+          <div class="day" id="locationParts" style="display: none;"><i class="bi bi-geo-alt"></i>&nbspLocation</div> <!-- Additional location text initially hidden -->
+          <div class="day" id="date"><i class="bi bi-calendar"></i></div>
+          <div class="weather">
+            <h1 class="temp" id="temperatureC"></h1>
+            <span class="separator" style="display: none;">|</span>
+            <h1 id="temperatureF"></h1>
+            <img src="." alt="Weather Icon" class="icon" id="weatherIcon" style="display: none;" />
+          </div>
+          <div class="description" id="txtWord"></div>
+          <div class="humidity" id="humidity"></div>
+          <div class="wind" id="wind"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
